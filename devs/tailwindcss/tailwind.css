@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* slick-slider */
+
+.testimonial {
+ max-width: 700px !important;
+
+}
+
+.priv_arrow {
+  position: absolute;
+  bottom: -80px;
+  left: 55%;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+.next_arrow {
+  position: absolute;
+  bottom: -80px;
+  left: 35%;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 50px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+.priv_arrow:hover,
+.next_arrow:hover {
+  background-color: red !important;
+}
+
+nav.active_nav {
+  position: fixed;
+  width: 100%;
+  background: #FC4B37;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
+  z-index: 101;
+}
+
+
+@media (min-width: 640px) {
+  .priv_arrow {
+    left: 55%;
+  }
+  .next_arrow {
+    left: 45%;
+  }
+}
+@media (min-width: 768px) {
+  .priv_arrow {
+    left: 53%;
+  }
+  .next_arrow {
+    left: 44%;
+  }
+}
+@media (min-width: 1024px) {
+  .priv_arrow {
+    left: 53%;
+  }
+  .next_arrow {
+    left: 47%;
+  }
+}
+@media (min-width: 1280px) {
+  .priv_arrow {
+    left: 52%;
+  }
+  .next_arrow {
+    left: 48%;
+  }
+}

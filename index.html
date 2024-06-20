@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Newsify</title>
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- slick slider -->
+  <link rel="stylesheet" href="./assets/slick/slick.css">
+  <!-- <link rel="stylesheet" href="./assets/slick/slick-theme.css"> -->
+
+  <!-- AOS-animations -->
+  <link rel="stylesheet" href="./assets/css/aos.css">
+
+  <!-- style css -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="font-[Inter]">
+
+  <!-- header =======================================-->
+  <header class="bg-[#FC4B37]">
+
+    <!-- Navigation-bar -------------->
+    <nav>
+
+      <div class="container px-9 3xl:px-40 2xl:px-20 xl:px-16 lg:px-12 md:px-10">
+
+        <div class="nav_head relative z-10">
+
+          <div id="logo" 
+          class="
+            py-[22px] 
+            absolute 
+            right-0 
+            lg:hidden">
+            <a class="
+              flex 
+              items-center 
+              gap-2" href="#">
+              <img class="
+              block 
+              object-cover" src="./assets/images/logo.png" alt="Groclone">
+            </a>
+          </div>
+
+          <div id="hamburger" class="
+            py-[22px] 
+            lg:hidden 
+            text-[20px] 
+            text-white">
+            <span class="fa-solid fa-bars"></span>
+          </div>
+
+          <div id="main_menu" class="
+              fixed 
+              right-0 
+              left-0 
+              hidden 
+              lg:flex 
+              lg:justify-between 
+              lg:items-center 
+              lg:static bg-[#FC4B37]">
+
+            <div id="logo" class="
+              hidden 
+              lg:block">
+              <a href="#" class="
+                flex 
+                items-center 
+                gap-2">
+                <img src="./assets/images/logo.png" alt="Groclone.">
+              </a>
+            </div>
+
+            <ul class="
+              gap-10 
+              md:flex-col 
+              lg:flex 
+              lg:flex-row">
+
+              <li class="
+                text-center py-3 
+                border-b-[1px] 
+                border-b-[#1e1b1b1e] 
+                lg:border-0">
+                <a href="#" class="
+                  text-white
+                  font-paragraph 
+                  text-[16px] 
+                  font-medium 
+                  leading-[24px]
+                  transition
+                  duration-500
+                  ease-in
+                  tracking-[-0.16px]
+                  hover:text-black">Home
+                </a>
+              </li>
+
+              <li class="
+                text-center py-3 
+                border-b-[1px] 
+                border-b-[#1e1b1b1e] 
+                lg:border-0">
+                <a href="#" class="
+                  text-white
+                  font-paragraph 
+                  text-[16px] 
+                  font-medium 
+                  leading-[24px] 
+                  tracking-[-0.16px]
+                  transition
+                  duration-500
+                  ease-in
+                  hover:text-black">Pricing
+                </a>
+              </li>
+
+              <li class="
+                text-center
+                py-3 
+                border-b-[1px] 
+                border-b-[#1e1b1b1e] 
+                lg:border-0">
+                <a href="#" class="
+                  text-white 
+                  font-paragraph 
+                  text-[16px] 
+                  font-medium 
+                  leading-[24px] 
+                  tracking-[-0.16px]
+                  transition
+                  duration-500
+                  ease-in
+                  hover:text-black">Blog
+                </a>
+              </li>
+
+              <li class="
+                text-center
+                py-3 
+                border-b-[1px] 
+                border-b-[#1e1b1b1e] 
+                lg:border-0">
+                <a href="#" class="
+                  text-white
+                  font-paragraph 
+                  text-[16px] 
+                  font-medium 
+                  leading-[24px] 
+                  tracking-[-0.16px]
+                  transition
+                  duration-500
+                  ease-in
+                  hover:text-black">About
+                </a>
+              </li>
+
+              <li class="
+                text-center
+                py-3 
+                border-b-[1px] 
+                border-b-[#1e1b1b1e] 
+                lg:border-0">
+                <a href="#" class="
+                  text-white
+                  font-paragraph 
+                  text-[16px] 
+                  font-medium 
+                  leading-[24px] 
+                  tracking-[-0.16px]
+                  transition
+                  duration-500
+                  ease-in
+                  hover:text-black">Contact
+                </a>
+              </li>
+
+            </ul>
+
+            <div class="cta_btn py-4 text-center flex justify-center">
+              <a href="#" class="
+                bg-white
+                flex gap-[10px]
+                items-center
+                px-[32px] py-[18px]
+                text-black
+                font-paragraph
+                text-[16px]
+                text-center
+                font-bold
+                rounded-[32px]
+                leading-6
+                tracking-[-0.16px]
+                transition
+                duration-500
+                ease-in
+                hover:bg-orange-500
+                border hover:border 
+                hover:text-white">
+                Get started
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation-bar end ---------->
+
+    <!-- hero section ---------------->
+    <div class="
+      container 
+      flex flex-col 
+      justify-center 
+      items-center 
+      px-9 
+      3xl:px-40 
+      2xl:px-20 
+      xl:px-16 
+      lg:px-12 
+      md:px-10" data-aos="fade-up">
+      <div class="mb-[50px] mt-[114px]">
+        <h1 class="
+          text-center 
+          text-white 
+          font-bold 
+          text-[40px] 
+          xl:text-[80px] 
+          xl:leading-[100px] 
+          xl:tracking-[-2px] 
+          2xl:text-[100px] 
+          2xl:leading-[120px] 
+          lg:text-[75px] 
+          md:text-[55px] 
+          sm:text-[45px]">Presenting the next-gen anaylitics software
+        </h1>
+      </div>
+
+      <div class="
+        mb-[78px] 
+        flex 
+        items-center 
+        justify-center 
+        flex-wrap">
+        <a href="#" class="
+          rounded-full 
+          py-[10px] 
+          px-[20px] 
+          m-[10px] 
+          text-white
+          border
+          sm:py-4 
+          sm:px-9 
+          sm:m-[22px]
+          transition
+          duration-500
+          ease-in
+          hover:bg-white 
+          hover:text-black">Let`s talk
+        </a>
+
+        <a href="#" class="
+        rounded-full 
+        py-[10px] 
+        px-[20px] 
+        m-[10px] 
+        text-white
+        border
+        sm:py-4 
+        sm:px-9 
+        sm:m-[22px]
+        transition
+        duration-500
+        ease-in
+        hover:bg-white 
+        hover:text-black">Get Started
+        </a>
+
+      </div>
+    </div>
+    <!-- hero section end ------------>
+
+    <!-- hero image section ---------->
+    <div class="
+      container 
+      flex 
+      justify-center 
+      px-9 
+      3xl:px-40 
+      2xl:px-20 
+      xl:px-16 
+      lg:px-12 
+      md:px-10" data-aos="fade-right">
+      <img class="
+        max-w-[1600px] 
+        w-[100%] 
+        h-auto 
+        3xl:pb-[140px]" src="./assets/images/laptop.png" alt="laptop">
+    </div>
+    <!-- hero image section end ------>
+
+  </header>
+  <!-- header end ===================================-->
+
+  <!-- tools-section ================================-->
+  <section id="tools-section">
+    <div class="
+          container 
+          mt-[140px] 
+          mb-36 
+          px-9 
+          3xl:px-40 
+          2xl:px-20 
+          xl:px-16 
+          lg:px-12 
+          md:px-10">
+
+      <div class="
+            flex 
+            flex-col 
+            items-center 
+            sm:w-[500px] 
+            mb-[50px] 
+            md:w-[600px] 
+            lg:w-[700px] 
+            xl:w-[800px] 
+            3xl:mt-[140px] 
+            3xl:mb-[140px] 
+            m-[auto]" data-aos="fade-up">
+
+        <h2 class="
+            text-black 
+              text-center 
+              text-[40px] 
+              sm:text-7xl 
+              font-bold 
+              tracking-[-1.44px] 
+              mb-[30px]">All-in-one anaytics tool
+        </h2>
+
+        <p class="
+            text-black 
+              text-center 
+              sm:text-xl 
+              font-normal">"Maximize your decision-making capabilities with our powerful analytical tools. Harness the
+          power of your data to drive growth and success."
+        </p>
+
+      </div>
+
+      <div class="
+            flex 
+            flex-col-reverse 
+            justify-between 
+            lg:flex-row 
+            xl:mb-[290px] 
+            xl:space-x-[100px]">
+
+        <div class="
+              xl:w-[821px] 
+              lg:w-[500px] 
+              lg:flex lg:items-center 
+              mb-[70px]" data-aos="fade-right">
+          <img src="./assets/images/left side.png" alt="">
+        </div>
+
+        <div class="
+              lg:w-[400px] 
+              xl:w-[619px] 
+              mb-[50px]" data-aos="fade-left">
+
+          <h6 class="
+              text-[#FC4B37] 
+              text-[22px] 
+              font-medium 
+              leading-[30px] 
+              mb-[25px] 
+              text-center 
+              lg:text-left">Advance campaign monitoring
+          </h6>
+
+          <h2 class="
+              text-black 
+              text-[30px]
+              lg:text-[50px] 
+              xl:text-[65px] 
+              font-bold 
+              tracking-[-1.44px] 
+              mb-10 text-center 
+              lg:text-left">Monitor marketing campaigns
+          </h2>
+
+          <p class="
+          text-black 
+          text-[22px] 
+          leading-9 
+          font-normal 
+          text-justify 
+          mb-[40px]">"Stay ahead of the game. Monitor your marketing campaigns in real-time with our intuitive tools,
+            and make data-driven decisions for optimal results."
+          </p>
+
+          <li class="
+                list-none 
+                text-black 
+                text-[22px] 
+                font-medium 
+                leading-[50px] 
+                text-left
+                transition
+                duration-300
+                ease-in
+                hover:translate-x-4">
+            <i class="
+                text-[22px] 
+                leading-[50px] 
+                text-[#83B71B] 
+                fa-solid 
+                fa-check">
+            </i>
+            Realtime analytics
+          </li>
+
+          <li class="
+                list-none 
+                text-black 
+                text-[22px] 
+                font-medium 
+                leading-[50px] 
+                text-left
+                transition
+                duration-300
+                ease-in
+                hover:translate-x-4">
+            <i class="
+                text-[22px] 
+                leading-[50px] 
+                text-[#83B71B] 
+                fa-solid 
+                fa-check">
+            </i>
+            Best campaign manager
+          </li>
+
+          <li class="
+          list-none 
+          text-black 
+          text-[22px] 
+          font-medium 
+          leading-[50px] 
+          text-left
+          transition
+          duration-300
+          ease-in
+          hover:translate-x-4">
+            <i class="
+          text-[22px] 
+          leading-[50px] 
+          text-[#83B71B] 
+          fa-solid 
+          fa-check">
+            </i>
+            Detailed contact dta
+          </li>
+
+        </div>
+      </div>
+
+
+      <div class="
+            flex 
+            flex-col 
+            justify-between 
+            lg:flex-row 
+            xl:mb-[290px] 
+            xl:space-x-[100px]">
+        <div class="
+              lg:w-[400px] 
+              xl:w-[619px] 
+              mb-[50px]" data-aos="fade-right">
+
+          <h6 class="
+              text-[#FC4B37] 
+              text-[22px] 
+              font-medium 
+              leading-[30px] 
+              mb-[25px] 
+              text-center 
+              lg:text-left">
+            Details User Anaylitices
+          </h6>
+
+          <h2 class="
+            text-black 
+              text-[30px] 
+              lg:text-[50px] 
+              xl:text-[65px] 
+              font-bold 
+              tracking-[-1.44px] 
+              mb-10 
+              text-center 
+              lg:text-left">
+            Have all customer data in one place
+          </h2>
+
+          <p class="
+            text-black 
+            text-[22px] 
+            leading-9 
+            font-normal 
+            text-justify 
+            mb-[40px]">
+            "Stay ahead of the game. Monitor your marketing campaigns in real-time with our intuitive tools, and make
+            data-driven decisions for optimal results."
+          </p>
+
+          <li class="
+              list-none 
+              text-black 
+              text-[22px] 
+              font-medium 
+              leading-[50px] 
+              text-left
+              transition
+              duration-300
+              ease-in
+              hover:translate-x-4">
+            <i class="
+              text-[22px] 
+              leading-[50px] 
+              text-[#83B71B] 
+              fa-solid 
+              fa-check">
+            </i>
+            Advance reports
+          </li>
+
+          <li class="
+                list-none 
+              text-black 
+                text-[22px] 
+                font-medium 
+                leading-[50px]
+                transition
+                duration-300
+                ease-in
+                hover:translate-x-4">
+            <i class="
+                text-[22px] 
+                leading-[50px] 
+              text-[#83B71B] 
+                fa-solid 
+                fa-check">
+            </i>
+            Us  path anaylitics
+          </li>
+
+          <li class="
+                list-none 
+              text-black 
+                text-[22px] 
+                font-medium 
+                leading-[50px]
+                transition
+                duration-300
+                ease-in
+                hover:translate-x-4">
+            <i class="
+                text-[22px] 
+                leading-[50px] 
+                text-[#83B71B] 
+                fa-solid 
+                fa-check">
+            </i>
+           Predictive user trends
+          </li>
+        </div>
+
+        <div class="
+            xl:w-[821px] 
+            lg:w-[500px] 
+            lg:flex 
+            lg:items-center" data-aos="fade-left">
+          <img src="./assets/images/right side.png" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- tools-section end ===================================-->
+
+  <section id="featues-section" class="mt-36" data-aos="fade-up">
+    <div class="
+          container 
+          px-9 
+          3xl:px-40 
+          2xl:px-20 
+          xl:px-16 
+          lg:px-12 
+          md:px-10">
+      <h2 class="
+          text-black 
+          text-[40px] 
+          text-center 
+          2xl:text-7xl 
+          sm:text-[60px] 
+          font-bold 
+          leading-[-1.44px] 
+          mb-[77px]">
+        Simple yet <span class="text-[#FC4B37]">powerful</span> features
+      </h2>
+    </div>
+
+    <div class="
+          container 
+          px-9 
+          3xl:px-40 
+          2xl:px-20 
+          xl:px-16 
+          lg:px-12 
+          md:px-10">
+
+      <div class="
+            flex 
+            justify-center 
+            flex-wrap 
+            gap-6 
+            mb-20">
+
+        <div class="
+              simple_box
+              px-10 py-[50px] 
+              bg-[#F4F4F4] 
+              rounded-[20px] 
+              xl:w-[500px] 
+              transition
+              duration-300
+              ease-in
+              hover:shadow-[1px_3px_5px_3px_rgba(0,0,0,0.3)]">
+
+          <img class="mb-8" src="./assets/images/icon/icon-1.png">
+
+          <h2 class="
+              text-black 
+              text-[32px] 
+              font-bold 
+              mb-4">Advance analytics
+          </h2>
+
+          <p class="
+              text-black 
+              text-[22px] 
+              font-normal 
+              lg:text-[18px]">"Unlock the full potential of your data with our advanced analytics. Empower yourself
+            with insights and make informed decisions for your business growth."
+          </p>
+
+        </div>
+
+        <div class="
+              simple_box
+              px-10 py-[50px] 
+              bg-[#F4F4F4] 
+              rounded-[20px]
+              xl:w-[500px] 
+              transition
+              duration-300
+              ease-in
+              hover:shadow-[1px_3px_5px_3px_rgba(0,0,0,0.3)]">
+
+          <img class="
+            mb-8" src="./assets/images/icon/icon-2.png">
+
+          <h2 class="
+              text-black 
+              text-[32px] 
+              font-bold 
+              mb-4">100+Integerations
+          </h2>
+
+          <p class="
+              text-black 
+              text-[22px] 
+              font-normal 
+              lg:text-[18px]">"Streamline your workflow with ease. Choose from over 100+ integrations and seamlessly
+            connect your tools, for a unified and efficient process."
+          </p>
+
+        </div>
+
+        <div class="
+              simple_box
+              px-10 py-[50px] 
+              bg-[#F4F4F4] 
+              rounded-[20px]
+              xl:w-[500px] 
+              transition
+              duration-300
+              ease-in 
+              hover:shadow-[1px_3px_5px_3px_rgba(0,0,0,0.3)]">
+
+          <img class="
+            mb-8" src="./assets/images/icon/icon-3.png">
+
+          <h2 class="
+              text-black 
+              text-[32px] 
+              font-bold 
+              mb-4">User Journey
+          </h2>
+
+          <p class="
+              text-black 
+              text-[22px] 
+              font-normal 
+              lg:text-[18px]">"Experience the journey from a user's perspective. Get a deeper understanding of their
+            behavior and needs, and optimize customer journey for aseamless experience."
+          </p>
+
+        </div>
+
+        <div class="
+              simple_box
+              px-10 py-[50px] 
+              bg-[#F4F4F4] 
+              rounded-[20px]
+              xl:w-[500px] 
+              transition
+              duration-300
+              ease-in 
+              hover:shadow-[1px_3px_5px_3px_rgba(0,0,0,0.3)]">
+
+          <img class="
+            mb-8" src="./assets/images/icon/icon-4.png">
+
+          <h2 class="
+              text-black 
+              text-[32px] 
+              font-bold 
+              mb-4">Automated Reports
+          </h2>
+
+          <p class="
+              text-black 
+              text-[22px] 
+              font-normal 
+              lg:text-[18px]">"Effortlessly track your success. Generate automated reports, and stay on top of your key
+            metrics without any manual effort."
+          </p>
+
+        </div>
+
+        <div class="
+              simple_box
+              px-10 py-[50px] 
+              bg-[#F4F4F4] 
+              rounded-[20px]
+              xl:w-[500px] 
+              transition
+              duration-300
+              ease-in 
+              hover:shadow-[1px_3px_5px_3px_rgba(0,0,0,0.3)]">
+
+          <img class="
+            mb-8" src="./assets/images/icon/icon-5.png">
+
+          <h2 class="
+              text-black 
+              text-[32px] 
+              font-bold 
+              mb-4">Machine Learning
+          </h2>
+
+          <p class="
+              text-black 
+              text-[22px] 
+              font-normal 
+              lg:text-[18px]">"Power up your decision-making with machine learning. Let our cutting-edge technology
+            help you drive success and stay ahead in the game."
+          </p>
+
+        </div>
+
+        <div class="
+              simple_box
+              px-10 py-[50px] 
+              bg-[#F4F4F4] 
+              rounded-[20px]
+              xl:w-[500px] 
+              transition
+              duration-300
+              ease-in 
+              hover:shadow-[1px_3px_5px_3px_rgba(0,0,0,0.3)]">
+
+          <img class="
+            mb-8" src="./assets/images/icon/icon-6.png">
+
+          <h2 class="
+              text-black 
+              text-[32px] 
+              font-bold 
+              mb-4">A/B Tetsing
+          </h2>
+
+          <p class="
+              text-black 
+              text-[22px] 
+              font-normal 
+              lg:text-[18px]">"Make informed decisions with A/B testing. Experiment with different variations, and use
+            data-driven insights to optimize and drive success for your business."
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="
+          flex 
+          flex-col 
+          sm:flex-row 
+          justify-center 
+          gap-y-[20px] 
+          gap-x-[20px] 
+          text-center 
+          items-center 
+          m-auto 
+          mb-[140px] ">
+
+      <a href="#" class="
+        bg-white 
+        block 
+        rounded-full 
+        py-4 
+        px-9 
+        border-solid 
+        border 
+        border-[#FC4B37]
+        transition
+        duration-500
+        ease-in
+        hover:bg-orange-500 
+        hover:border 
+        hover:text-white">Get
+        started</a>
+
+      <a href="#" class="
+        bg-white 
+        block 
+        rounded-full 
+        py-4 px-9 
+        border-solid 
+        border 
+        border-[#FC4B37] 
+        transition
+        duration-500
+        ease-in
+        hover:bg-orange-500 
+        hover:border 
+        hover:text-white">See more features
+      </a>
+
+    </div>
+    </div>
+  </section>
+  <!-- featues-section end =================================-->
+
+  <!-- testimonial-section =============-->
+  <section id="
+  testimonial_section" class="
+    bg-[#111] 
+    pt-[240px] 
+    pb-[320px] 
+    mb-[140px]">
+<div data-aos="fade-up">
+
+    <div class="
+          container 
+          px-9 
+          3xl:px-40 
+          2xl:px-20 
+          xl:px-16 
+          lg:px-12 
+          md:px-10 
+          mb-[76px]">
+
+      <div class="
+            testimonial_heading 
+            flex 
+            flex-col 
+            items-center">
+
+        <h2 class="
+            text-white 
+            sm:text-[70px] 
+            font-bold 
+            sm:leading-[80px] 
+            mb-[19px] 
+            text-[30px] 
+            text-center">Our Customers Review
+        </h2>
+
+        <p class="
+            text-white 
+            sm:text-[22px] 
+            font-normal 
+            sm:leading-9 
+            max-w-[650px] 
+            w-[100%] 
+            text-center">Groclone is trusted by fastest growth companies the focus on financial management Here`s what
+          they have to say about us.
+        </p>
+
+      </div>
+    </div>
+
+    <div class="
+          container 
+          pl-9 
+          3xl:pl-40 
+          2xl:pl-20 
+          xl:pl-16 
+          lg:pl-12 
+          md:pl-10">
+      <div class="
+            testimonial_container">
+
+        <div class="
+              testimonial 
+              bg-[#222629] 
+              rounded-[20px] 
+              p-10 
+              ml-[30px]">
+          <p class="
+            text-white 
+            sm:text-[30px] 
+            font-normal 
+            sm:leading-[42px] 
+            mb-[45px] 
+            sm:text-left 
+            text-center">I really like the system at this management, i love recommending this software to you guys
+          </p>
+
+          <div class="
+                  testimonial_author 
+                  flex 
+                  sm:justify-between 
+                  flex-wrap 
+                  items-center">
+
+            <div class="
+                  author_Introduce 
+                  flex 
+                  flex-wrap 
+                  sm:justify-start 
+                  justify-center 
+                  items-center 
+                  gap-[10px]">
+              <img src="./assets/images/testimonial-author-1.png">
+
+              <div class="flex flex-col gap-2 ">
+                <h2 class="
+                    text-white 
+                    sm:text-[26px] 
+                    font-normal 
+                    tracking-[-0.65px]
+                    ">Ashley Cooper
+                </h2>
+                <img src="./assets/images/stars.png" alt="stars">
+              </div>
+
+            </div>
+            <div class="brand_logo hidden sm:block">
+              <img class="
+                    max-w-[55px] 
+                    max-h-[82px]" src="./assets/images/inverted-comma.png">
+            </div>
+          </div>
+        </div>
+
+        <div class="
+              testimonial 
+              bg-[#222629] 
+              rounded-[20px] 
+              p-10 
+              ml-[30px]">
+          <p class="
+            text-white 
+            sm:text-[30px] 
+            font-normal 
+            sm:leading-[42px] 
+            mb-[45px] 
+            sm:text-left 
+            text-center">
+            I really like the system at this management, i love recommending this software to you guys
+          </p>
+
+          <div class="
+                testimonial_author 
+                flex 
+                sm:justify-between 
+                flex-wrap 
+                items-center">
+
+            <div class="
+                  author_Introduce 
+                  flex 
+                  flex-wrap 
+                  sm:justify-start 
+                  justify-center
+                  items-center 
+                  gap-[10px]">
+              <img src="./assets/images/testimonial-author-1.png">
+              <div class="
+                    flex 
+                    flex-col 
+                    gap-2 ">
+                <h2 class="
+                    text-white 
+                    sm:text-[26px] 
+                    font-normal 
+                    tracking-[-0.65px]">Ashley Cooper
+                </h2>
+                <img src="./assets/images/stars.png" alt="stars">
+              </div>
+
+            </div>
+            <div class="
+                  brand_logo 
+                  hidden 
+                  sm:block">
+              <img class="
+                    max-w-[55px] 
+                    max-h-[82px]" src="./assets/images/inverted-comma.png">
+            </div>
+          </div>
+        </div>
+
+        <div class="
+              testimonial 
+              bg-[#222629] 
+              rounded-[20px] 
+              p-10 ml-[30px]">
+          <p class="
+              text-white 
+              sm:text-[30px] 
+              font-normal 
+              sm:leading-[42px] 
+              mb-[45px] 
+              sm:text-left 
+              text-center">I really like the system at this management, i love recommending this software to you guys
+          </p>
+
+          <div class="
+                testimonial_author 
+                flex 
+                sm:justify-between 
+                flex-wrap 
+                items-center">
+
+            <div class="
+                  author_Introduce 
+                  flex 
+                  flex-wrap 
+                  sm:justify-start 
+                  justify-center 
+                  items-center 
+                  gap-[10px]">
+              <img src="./assets/images/testimonial-author-1.png">
+              <div class="
+                    flex 
+                    flex-col 
+                    gap-2 ">
+                <h2 class="
+                    text-white 
+                    sm:text-[26px] 
+                    font-normal 
+                    tracking-[-0.65px]">Ashley Cooper
+                </h2>
+                <img src="./assets/images/stars.png" alt="stars">
+              </div>
+
+            </div>
+            <div class="
+                  brand_logo 
+                  hidden 
+                  sm:block">
+              <img class="
+                    max-w-[55px] 
+                    max-h-[82px]" src="./assets/images/inverted-comma.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- testimonial-section end =========-->
+
+  <footer id="top_footer" data-aos="fade-up">
+    <div class="
+          container 
+          px-9 
+          3xl:px-40 
+          2xl:px-20 
+          xl:px-16 
+          lg:px-12 
+          mb-[146px]">
+      <div class="
+            footer_container 
+            flex-wrap 
+            xl:flex-nowrap 
+            3xl:gap-[343px] 
+            2xl:gap-[150px] 
+            xl:gap-[67px] 
+            flex">
+
+        <div class="
+              xl:w-[415px] 
+              xl:mb-0 mb-8">
+
+          <h2 class="
+              text-[#FC4B37] 
+              items-center 
+              text-[56px] 
+              font-bold 
+              leading-[60px] 
+              mb-[30px]">Groclone.
+          </h2>
+
+          <p class="
+            text-black 
+            text-[22px] 
+            font-normal 
+            leading-9">
+            "Maximize your decision-making capabilities with our powerful analytical tools. Harness the power of your
+            data to drive growth and success."
+          </p>
+
+        </div>
+
+        <div class="
+              flex 
+              3xl:gap-[118px] 
+              2xl:gap-[98px] 
+              xl:gap-[50px] 
+              gap-9 w-[100%] 
+              xl:w-auto 
+              justify-between 
+              lg:flex-nowrap 
+              flex-wrap">
+
+          <div class="w-[100px]">
+
+            <h2 class="
+                text-black 
+                text-xl 
+                font-bold 
+                mb-8">Navigate</h2>
+
+            <ul class="flex flex-col space-y-5">
+              <li><a  
+                class="
+                transition
+                duration-500
+                ease-in
+                hover:text-[#fc4b37]" href="#">Home</a></li>
+              <li><a  
+                class="
+                transition
+                duration-500
+                ease-in
+                hover:text-[#fc4b37]" href="#">Pricing</a></li>
+              <li><a  
+                class="
+                transition
+                duration-500
+                ease-in
+                hover:text-[#fc4b37]" href="#">Blog</a></li>
+              <li><a  
+                class="
+                transition
+                duration-500
+                ease-in
+                hover:text-[#fc4b37]" href="#">About</a></li>
+            </ul>
+          </div>
+
+          <div class="w-[120px]">
+
+            <h2 class="
+                text-black 
+                text-xl 
+                font-bold 
+                mb-8">Support Us
+            </h2>
+
+            <ul class="flex flex-col space-y-5">
+              <li><a  
+                class="
+                transition
+                duration-500
+                ease-in
+                hover:text-[#fc4b37]" href="#">FAQ`s</a></li>
+              <li><a  
+                class="
+                transition
+                duration-500
+                ease-in
+                hover:text-[#fc4b37]" href="#">Contact Us</a></li>
+              <li><a  
+                class="
+                transition
+                duration-500
+                ease-in
+                hover:text-[#fc4b37]" href="#">Support Center</a></li>
+              <li><a  
+                class="
+                transition
+                duration-500
+                ease-in
+                hover:text-[#fc4b37]" href="#">Security</a></li>
+            </ul>
+
+          </div>
+
+          <div class="w-[100px]">
+            <h2 class="
+                text-black 
+                text-xl 
+                font-bold
+                mb-8">Partner
+            </h2>
+
+            <ul class="flex flex-col space-y-5">
+              <li><a  
+                class="
+                transition
+                duration-500
+                ease-in
+                hover:text-[#fc4b37]" href="#">Our Partners</a></li>
+              <li><a  
+                class="
+                transition
+                duration-500
+                ease-in
+                hover:text-[#fc4b37]" href="#">Subscriber</a></li>
+            </ul>
+
+          </div>
+
+          <address>
+
+            <div class="w-[200px]">
+              <div class="
+                    flex 
+                    flex-col 
+                    space-y-5">
+
+                <h2 class="
+                    text-black 
+                    text-xl 
+                    font-bold 
+                    mb-8">Contact US
+                </h2>
+
+                <a href="#" 
+                class="
+                transition
+                duration-500
+                ease-in
+                hover:text-[#fc4b37]">Growclone@business.com</a>
+                <p>+61 7 7010 6803</p>
+
+              </div>
+
+              <div class="flex space-x-3 mt-5">
+
+                <a href="#">
+                    <i class=" 
+                      flex
+                      justify-center
+                      items-center
+                      h-[40px]
+                      w-[40px]
+                      bg-black
+                      text-white
+                      text-[20px]
+                      rounded-full
+                      transition
+                      duration-500
+                      ease-in
+                      hover:bg-[#fc4b37]
+                      fa-brands
+                      fa-instagram">
+                    </i>
+                </a>
+             
+                <a href="#">
+                    <i class=" 
+                      flex
+                      justify-center
+                      items-center
+                      h-[40px]
+                      w-[40px]
+                      bg-black
+                      text-white
+                      text-[20px]
+                      rounded-full
+                      transition
+                      duration-500
+                      ease-in
+                      hover:bg-[#fc4b37]
+                      fa-brands
+                      fa-twitter">
+                    </i>
+                </a>
+
+                <a href="#">
+                    <i class=" 
+                      flex
+                      justify-center
+                      items-center
+                      h-[40px]
+                      w-[40px]
+                      bg-black
+                      text-white
+                      text-[20px]
+                      rounded-full
+                      transition
+                      duration-500
+                      ease-in
+                      hover:bg-[#fc4b37]
+                      fa-brands
+                      fa-facebook-f">
+                  </i>
+                </a>
+
+              </div>
+
+            </div>
+          </address>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div id="bottom_footer">
+      <div class="
+            container 
+            px-9 
+            3xl:px-40 
+            2xl:px-20 
+            xl:px-16 
+            lg:px-12">
+
+        <div class="
+              flex 
+              md:justify-between 
+              md:flex-row 
+              flex-col 
+              gap-6 
+              pt-[43px] 
+              pb-[33px] 
+              justify-center 
+              text-center 
+              border-t 
+              border-black">
+
+          <p class="
+              text-[15px] 
+              font-normal 
+              leading-6 
+              tracking-[-0.225px]">
+            &copy; 2023 Groclone, We love our users!
+          </p>
+
+          <a href="#" class="
+              text-[14px] 
+              font-normal 
+              leading-[30px]
+              transition
+              duration-500
+              ease-in
+              hover:text-[#fc4b37]">
+            Terms & Conditions , Privacy Policy , Sitemap
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- jQuery link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./assets/slick/slick.min.js"></script>
+  <script src="./assets/js/aos.js"></script>
+  <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
