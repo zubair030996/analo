@@ -616,6 +616,38 @@ video {
   right: 0px;
 }
 
+.top-0 {
+  top: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.bottom-\[50\%\] {
+  bottom: 50%;
+}
+
+.top-\[50\%\] {
+  top: 50%;
+}
+
+.bottom-\[25\%\] {
+  bottom: 25%;
+}
+
+.top-\[25\%\] {
+  top: 25%;
+}
+
+.bottom-\[15\%\] {
+  bottom: 15%;
+}
+
+.top-\[15\%\] {
+  top: 15%;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -877,9 +909,9 @@ video {
   border-style: solid;
 }
 
-.border-\[\#FC4B37\] {
+.border-\[\#4C56BB\] {
   --tw-border-opacity: 1;
-  border-color: rgb(252 75 55 / var(--tw-border-opacity));
+  border-color: rgb(76 86 187 / var(--tw-border-opacity));
 }
 
 .border-black {
@@ -901,14 +933,14 @@ video {
   background-color: rgb(34 38 41 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#4C56BB\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(76 86 187 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#F4F4F4\] {
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 244 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#FC4B37\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 75 55 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -978,6 +1010,11 @@ video {
 .py-\[50px\] {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.py-\[20px\] {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .pb-\[320px\] {
@@ -1113,14 +1150,14 @@ video {
   letter-spacing: -1.44px;
 }
 
+.text-\[\#4C56BB\] {
+  --tw-text-opacity: 1;
+  color: rgb(76 86 187 / var(--tw-text-opacity));
+}
+
 .text-\[\#83B71B\] {
   --tw-text-opacity: 1;
   color: rgb(131 183 27 / var(--tw-text-opacity));
-}
-
-.text-\[\#FC4B37\] {
-  --tw-text-opacity: 1;
-  color: rgb(252 75 55 / var(--tw-text-opacity));
 }
 
 .text-black {
@@ -1199,7 +1236,7 @@ video {
 nav.active_nav {
   position: fixed;
   width: 100%;
-  background: #FC4B37;
+  background: #4C56BB;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
   z-index: 101;
 }
@@ -1253,9 +1290,9 @@ nav.active_nav {
   border-width: 1px;
 }
 
-.hover\:bg-\[\#fc4b37\]:hover {
+.hover\:bg-\[\#4C56BB\]:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(252 75 55 / var(--tw-bg-opacity));
+  background-color: rgb(76 86 187 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-orange-500:hover {
@@ -1268,9 +1305,9 @@ nav.active_nav {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.hover\:text-\[\#fc4b37\]:hover {
+.hover\:text-\[\#4C56BB\]:hover {
   --tw-text-opacity: 1;
-  color: rgb(252 75 55 / var(--tw-text-opacity));
+  color: rgb(76 86 187 / var(--tw-text-opacity));
 }
 
 .hover\:text-black:hover {

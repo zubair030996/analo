@@ -47,7 +47,7 @@
 nav.active_nav {
   position: fixed;
   width: 100%;
-  background: #FC4B37;
+  background: #4C56BB;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
   z-index: 101;
 }
